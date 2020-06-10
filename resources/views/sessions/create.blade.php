@@ -44,7 +44,7 @@
                                     </div>
                                     <div class="card-footer text-center">
                                         <div class="small">
-                                            <a href="login">Besoin d'un compte? S'enregistrer!</a>
+                                            <a href="register">Besoin d'un compte? S'enregistrer!</a>
                                         </div>
                                     </div>
                                 </div>

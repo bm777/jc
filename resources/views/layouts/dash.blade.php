@@ -32,7 +32,7 @@
                         </div>
                         <a class="dropdown-item" href="logout">Log out</a>
                         @else
-                        <p class="dropdown-item" style="color: #0080ff;"></p>
+                        <a class="dropdown-item" href="/">Retour</a>
                         <div class="dropdown-divider">
                         	
                         </div>
@@ -46,8 +46,6 @@
 
         @if(auth()->check())
        
-        
-
         <div id="layoutSidenav">
             <div id="layoutSidenav_nav">
                 <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
@@ -56,21 +54,15 @@
                             <div class="sb-sidenav-menu-heading">Système</div>
                             <a class="nav-link" href="dash"
                                 ><div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-                                Dashboard</a>
+                                EMPLOYES</a>
 
                             
-                            <div class="sb-sidenav-menu-heading">LIENS</div>
+                            <div class="sb-sidenav-menu-heading">SALAIRES</div>
                             <a class="nav-link" href="charts.html">
                             	<div class="sb-nav-link-icon">
                             		<i class="fas fa-chart-area"></i>
                             	</div>
-                                Charts
-                            </a>
-                            <a class="nav-link" href="tables">
-                            	<div class="sb-nav-link-icon">
-                            		<i class="fas fa-table"></i>
-                            	</div>
-                                Tables
+                                Salaires
                             </a>
                         </div>
                     </div>
@@ -83,11 +75,43 @@
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid">
-                        <h1 class="mt-4">Tables</h1>
+                        <h1 class="mt-4">Employés</h1>
                         
                         <div class="card mb-4">
-                            <div class="card-body">Systeme de gestion des payement des employées de oyenga. <a href="">Oyenga</a>.</div>
+                            <div class="card-body">Systeme de gestion des payement des employés de oyenga. <a href="">Oyenga</a>.</div>
                         </div>
+                           <div class="form-row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <input class="form-control py-4" id="inputFirstName" name="fname" type="text" placeholder="Enter le prenom" />
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <input class="form-control py-4" id="inputLastName" type="text" placeholder="Enter le nom" name="lname" />
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <input class="form-control py-4" id="inputLastName" type="text" placeholder="Numéro de téléphone" name="tel" />
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <input class="form-control py-4" id="inputLastName" type="text" placeholder="N° de cni" name="cni" />
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <input class="form-control py-4" type="date" name="debut" />
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <input class="form-control py-4 btn btn-primary" name="ajouter" type="button" value="Ajouter" />
+                                    </div>
+                                </div>
+                            </div>
                         <div class="card mb-4">
                             <div class="card-header"><i class="fas fa-table mr-1"></i>Table de visualisation</div>
                             <div class="card-body">
@@ -95,22 +119,20 @@
                                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                         <thead>
                                             <tr>
-                                                <th>Name</th>
-                                                <th>Position</th>
-                                                <th>Office</th>
-                                                <th>Age</th>
+                                                <th>Prenom</th>
+                                                <th>Nom</th>
+                                                <th>Teéléphone</th>
+                                                <th>N° CNI</th>
                                                 <th>Start date</th>
-                                                <th>Salary</th>
                                             </tr>
                                         </thead>
                                         <tfoot>
                                             <tr>
-                                                <th>Name</th>
-                                                <th>Position</th>
-                                                <th>Office</th>
-                                                <th>Age</th>
+                                                <th>Prenom</th>
+                                                <th>Nom</th>
+                                                <th>Teéléphone</th>
+                                                <th>N° CNI</th>
                                                 <th>Start date</th>
-                                                <th>Salary</th>
                                             </tr>
                                         </tfoot>
                                         <tbody>
@@ -120,7 +142,6 @@
                                                 <td>Edinburgh</td>
                                                 <td>61</td>
                                                 <td>2011/04/25</td>
-                                                <td>$320,800</td>
                                             </tr>
 
                                         </tbody>
@@ -130,6 +151,7 @@
                         </div>
                     </div>
                 </main>
+
                 <footer class="py-4 bg-light mt-auto">
                     <div class="container-fluid">
                         <div class="d-flex align-items-center justify-content-between small">

@@ -1,7 +1,7 @@
 Salary management made by laravel
 
  ## Tool Used
-  - Os: ubuntu 18.04
+  - Os: ubuntu 18.04, windows(also)
   - Laravel: 7.x
   - Chome for visualization
   
